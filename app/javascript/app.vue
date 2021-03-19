@@ -1,22 +1,18 @@
 <template>
-  <div id="app">
-    <p>{{ message }}</p>
-  </div>
+  <Calendar />
 </template>
 
 <script>
+import Calendar from './components/Calendar.vue'
+
 export default {
-  data: function () {
-    return {
-      message: "Hello Vue!"
-    }
+  name: 'App',
+  components: {
+    Calendar
   }
 }
 </script>
 
 <style scoped>
-p {
-  font-size: 2em;
-  text-align: center;
-}
+
 </style>
